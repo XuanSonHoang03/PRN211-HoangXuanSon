@@ -1,0 +1,7 @@
+D:\Kì 5 - SP24\PRN211\SP24\GiaiPTB2\DisplayPrimeInArr\bin\Debug\DisplayPrimeInArr.exe.config
+D:\Kì 5 - SP24\PRN211\SP24\GiaiPTB2\DisplayPrimeInArr\bin\Debug\DisplayPrimeInArr.exe
+D:\Kì 5 - SP24\PRN211\SP24\GiaiPTB2\DisplayPrimeInArr\bin\Debug\DisplayPrimeInArr.pdb
+D:\Kì 5 - SP24\PRN211\SP24\GiaiPTB2\DisplayPrimeInArr\obj\Debug\DisplayPrimeInArr.csproj.AssemblyReference.cache
+D:\Kì 5 - SP24\PRN211\SP24\GiaiPTB2\DisplayPrimeInArr\obj\Debug\DisplayPrimeInArr.csproj.CoreCompileInputs.cache
+D:\Kì 5 - SP24\PRN211\SP24\GiaiPTB2\DisplayPrimeInArr\obj\Debug\DisplayPrimeInArr.exe
+D:\Kì 5 - SP24\PRN211\SP24\GiaiPTB2\DisplayPrimeInArr\obj\Debug\DisplayPrimeInArr.pdb
