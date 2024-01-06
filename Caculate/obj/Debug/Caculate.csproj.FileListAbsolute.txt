@@ -1,0 +1,7 @@
+D:\Kì 5 - SP24\PRN211\SP24\GiaiPTB2\Caculate\bin\Debug\Caculate.exe.config
+D:\Kì 5 - SP24\PRN211\SP24\GiaiPTB2\Caculate\bin\Debug\Caculate.exe
+D:\Kì 5 - SP24\PRN211\SP24\GiaiPTB2\Caculate\bin\Debug\Caculate.pdb
+D:\Kì 5 - SP24\PRN211\SP24\GiaiPTB2\Caculate\obj\Debug\Caculate.csproj.AssemblyReference.cache
+D:\Kì 5 - SP24\PRN211\SP24\GiaiPTB2\Caculate\obj\Debug\Caculate.csproj.CoreCompileInputs.cache
+D:\Kì 5 - SP24\PRN211\SP24\GiaiPTB2\Caculate\obj\Debug\Caculate.exe
+D:\Kì 5 - SP24\PRN211\SP24\GiaiPTB2\Caculate\obj\Debug\Caculate.pdb
