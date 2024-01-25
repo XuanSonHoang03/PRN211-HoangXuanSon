@@ -16,8 +16,9 @@ namespace MyStoreWinApp
     {
         public MemberObject MemberObject { get; set; }
         public IMemberRepository MemberRepository = new MemberRepository();
+        internal IMemberRepository memberRepository;
 
-        public bool InsertOrUpdate { get; set; }
+        public bool InsertOrUpdate { get; set; } // true: update, false: insert
         public bool ValidAdmin { get; set; }
         public frmMember()
         {
@@ -28,19 +29,19 @@ namespace MyStoreWinApp
         {
             try
             {
-                if (InsertOrUpdate == true)
+                if (InsertOrUpdate)
                 {
-                    MemberObject.MemberID = int.Parse(tbID.Text);
                     MemberObject.MemberName = tbName.Text;
                     MemberObject.Email = tbEmail.Text;
                     MemberObject.Password = tbPassword.Text;
                     MemberObject.City = tbCity.Text;
                     MemberObject.Country = tbCountry.Text;
 
-                    MessageBox.Show("Update successfully");
                     MemberRepository.UpdateMember(MemberObject);
+                    MessageBox.Show("Update successfully");
+                    Close();
                 }
-                else
+                else if (!InsertOrUpdate)
                 {
                     var memNew = new MemberObject()
                     {
@@ -52,15 +53,16 @@ namespace MyStoreWinApp
                         Country = tbCountry.Text
                     };
 
-                    MessageBox.Show("Insert successfully");
                     MemberRepository.InsertMember(memNew);
+                    MessageBox.Show("Insert successfully");
                     Close();
                 }
-            } catch(Exception ex)
+            }
+            catch (Exception ex)
             {
+                MessageBox.Show(ex.ToString());
                 MessageBox.Show(ex.Message, "Invalid");
             }
-            
         }
 
         private void frmMember_Load(object sender, EventArgs e)
@@ -76,15 +78,23 @@ namespace MyStoreWinApp
                 if (InsertOrUpdate)
                 {
                     tbID.Enabled = false;
+                    tbID.Text = MemberObject.MemberID.ToString();
                     tbName.Text = MemberObject.MemberName;
                     tbEmail.Text = MemberObject.Email;
                     tbPassword.Text = MemberObject.Password;
                     tbCity.Text = MemberObject.City;
                     tbCountry.Text = MemberObject.Country;
                 }
-            }  catch(Exception ex) {
+            }
+            catch (Exception ex)
+            {
                 MessageBox.Show(ex.Message, "Invalid information");
             }
+        }
+
+        private void btCancel_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

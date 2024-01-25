@@ -74,11 +74,13 @@
             // 
             tbPasword.Location = new System.Drawing.Point(182, 139);
             tbPasword.Name = "tbPasword";
+            tbPasword.PasswordChar = '*';
             tbPasword.Size = new System.Drawing.Size(180, 27);
             tbPasword.TabIndex = 4;
             // 
             // frmLogin
             // 
+            AcceptButton = btLogin;
             AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             ClientSize = new System.Drawing.Size(463, 300);
@@ -88,6 +90,7 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Name = "frmLogin";
+            StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             Text = "frmLogin";
             ResumeLayout(false);
             PerformLayout();

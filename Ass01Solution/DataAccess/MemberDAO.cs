@@ -13,7 +13,7 @@ namespace DataAccess
     {
         private static List<MemberObject> memberList = new List<MemberObject>()
         {
-            new MemberObject(1,"Hoang Xuan Son","sonhx@gmail.com", "123", "Ha Noi","VietNam"),
+            new MemberObject(11,"Hoang Xuan Son","sonhx@gmail.com", "123", "Ha Noi","VietNam"),
             new MemberObject(2,"Nguyen Nhu Phuong","nphuong@gmail.com", "123", "Ha Noi","Thailand"),
             new MemberObject(3,"Phan Huong Chi","hchi@gmail.com", "123", "Hung Yen","VietNam"),
             new MemberObject(4,"Bao Duc Chu","ducchung@gmail.com", "123", "Paris","France"),
@@ -89,22 +89,32 @@ namespace DataAccess
         public void UpdateMember(MemberObject Umember)
         {
             MemberObject member = GetMemberByID(Umember.MemberID);
-            Regex regex = new Regex(@"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$");
-            Match match = regex.Match(member.Email);
-            if (member != null && member.Email.Trim() != "" && member.Password.Trim() != "" && match.Success)
+            if (member != null)
             {
-                member.MemberName = Umember.MemberName;
-                member.Email = Umember.Email;
-                member.Password = Umember.Password;
-                member.City = Umember.City;
-                member.Country = Umember.Country;
+                Regex regex = new Regex(@"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$");
+                Match match = regex.Match(Umember.Email);
+
+                if (Umember.Email != null && Umember.Password != null && match.Success)
+                {
+                    member.MemberName = Umember.MemberName;
+                    member.Email = Umember.Email;
+                    member.Password = Umember.Password;
+                    member.City = Umember.City;
+                    member.Country = Umember.Country;
+
+                    return;
+                }
+                else
+                {
+                    throw new Exception("Invalid email, password, or format");
+                }
             }
             else
             {
-                throw new Exception("Can not update");
+                throw new Exception("Member not found");
             }
-
         }
+
 
         public void DeleteMember(int id)
         {

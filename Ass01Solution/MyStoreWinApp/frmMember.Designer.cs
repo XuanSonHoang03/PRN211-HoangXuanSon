@@ -148,6 +148,7 @@
             btCancel.TabIndex = 13;
             btCancel.Text = "Cancel";
             btCancel.UseVisualStyleBackColor = true;
+            btCancel.Click += btCancel_Click;
             // 
             // btSaveInfo
             // 
@@ -179,6 +180,7 @@
             Controls.Add(tbCity);
             Controls.Add(label1);
             Name = "frmMember";
+            StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             Text = "frmMember";
             Load += frmMember_Load;
             ResumeLayout(false);
@@ -199,7 +201,6 @@
         private System.Windows.Forms.TextBox tbEmail;
         private System.Windows.Forms.TextBox tbCountry;
         private System.Windows.Forms.TextBox tbName;
-        private System.Windows.Forms.Button btSave1;
         private System.Windows.Forms.Button btCancel;
         private System.Windows.Forms.Button btSaveInfo;
     }
