@@ -1,0 +1,14 @@
+D:\Ki5-SP24\PRN211\Github\Lab2\AutomobileLibrary\bin\Debug\net6.0\AutomobileLibrary.deps.json
+D:\Ki5-SP24\PRN211\Github\Lab2\AutomobileLibrary\bin\Debug\net6.0\AutomobileLibrary.dll
+D:\Ki5-SP24\PRN211\Github\Lab2\AutomobileLibrary\bin\Debug\net6.0\AutomobileLibrary.pdb
+D:\Ki5-SP24\PRN211\Github\Lab2\AutomobileLibrary\obj\Debug\net6.0\AutomobileLibrary.csproj.AssemblyReference.cache
+D:\Ki5-SP24\PRN211\Github\Lab2\AutomobileLibrary\obj\Debug\net6.0\AutomobileLibrary.GeneratedMSBuildEditorConfig.editorconfig
+D:\Ki5-SP24\PRN211\Github\Lab2\AutomobileLibrary\obj\Debug\net6.0\AutomobileLibrary.AssemblyInfoInputs.cache
+D:\Ki5-SP24\PRN211\Github\Lab2\AutomobileLibrary\obj\Debug\net6.0\AutomobileLibrary.AssemblyInfo.cs
+D:\Ki5-SP24\PRN211\Github\Lab2\AutomobileLibrary\obj\Debug\net6.0\AutomobileLibrary.csproj.CoreCompileInputs.cache
+D:\Ki5-SP24\PRN211\Github\Lab2\AutomobileLibrary\obj\Debug\net6.0\AutomobileLibrary.sourcelink.json
+D:\Ki5-SP24\PRN211\Github\Lab2\AutomobileLibrary\obj\Debug\net6.0\AutomobileLibrary.dll
+D:\Ki5-SP24\PRN211\Github\Lab2\AutomobileLibrary\obj\Debug\net6.0\refint\AutomobileLibrary.dll
+D:\Ki5-SP24\PRN211\Github\Lab2\AutomobileLibrary\obj\Debug\net6.0\AutomobileLibrary.pdb
+D:\Ki5-SP24\PRN211\Github\Lab2\AutomobileLibrary\obj\Debug\net6.0\ref\AutomobileLibrary.dll
+D:\Ki5-SP24\PRN211\Github\Lab2\AutomobileLibrary\bin\Debug\net6.0\appsettings.json
