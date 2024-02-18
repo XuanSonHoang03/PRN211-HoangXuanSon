@@ -49,7 +49,6 @@ namespace DataAccess.DAO
         }
         public List<MemberObject> GetMemberObject()
         {
-            IDataReader dataReader = null;
             string sql = "select * from Member";
             var memberList = new List<MemberObject>();
             foreach (DataRow dr in DBContext.GetDataBySQL(sql).Rows)
@@ -88,11 +87,11 @@ namespace DataAccess.DAO
             DataTable dt = DBContext.GetDataBySQL(sql, new SqlParameter("@Email", member.MemberEmail), new SqlParameter("@City", member.MemberCity), new SqlParameter("@Country", member.MemberCountry), new SqlParameter("@Password", member.MemberPassword), new SqlParameter("@CompanyName", member.CompanyName));
             SqlParameter[] parameters = new SqlParameter[]
             {
-                new SqlParameter("@Email", member.MemberEmail),
-                new SqlParameter("@City", member.MemberCity),
-                new SqlParameter("@Country", member.MemberCountry),
-                new SqlParameter("@Password", member.MemberPassword),
-                new SqlParameter("@CompanyName", member.CompanyName)
+                    new SqlParameter("@Email", member.MemberEmail),
+                    new SqlParameter("@City", member.MemberCity),
+                    new SqlParameter("@Country", member.MemberCountry),
+                    new SqlParameter("@Password", member.MemberPassword),
+                    new SqlParameter("@CompanyName", member.CompanyName)
             };
             return DBContext.ExcuteSql(sql, parameters);
         }
@@ -101,12 +100,12 @@ namespace DataAccess.DAO
             string sql = "UPDATE Member SET Email = @Email, City = @City, Country = @Country, Password = @Password, CompanyName = @CompanyName WHERE MemberId = @MemberId";
             SqlParameter[] parameters = new SqlParameter[]
             {
-                new SqlParameter("@Email", member.MemberEmail),
-                new SqlParameter("@City", member.MemberCity),
-                new SqlParameter("@Country", member.MemberCountry),
-                new SqlParameter("@Password", member.MemberPassword),
-                new SqlParameter("@CompanyName", member.CompanyName),
-                new SqlParameter("@MemberId", member.MemberId)
+                    new SqlParameter("@Email", member.MemberEmail),
+                    new SqlParameter("@City", member.MemberCity),
+                    new SqlParameter("@Country", member.MemberCountry),
+                    new SqlParameter("@Password", member.MemberPassword),
+                    new SqlParameter("@CompanyName", member.CompanyName),
+                    new SqlParameter("@MemberId", member.MemberId)
             };
             return DBContext.ExcuteSql(sql, parameters);
         }
@@ -116,18 +115,18 @@ namespace DataAccess.DAO
             string sql = "delete from Member where MemberId = @MemberId";
             SqlParameter[] parameters = new SqlParameter[]
             {
-                new SqlParameter("@MemberId", id)
+                    new SqlParameter("@MemberId", id)
             };
             return DBContext.ExcuteSql(sql, parameters);
         }
-        public MemberObject FilterByCity(string city)
+        public List<MemberObject> FilterByCity(string city)
         {
             string sql = "select * from Member where City = @City";
-            MemberObject memberObject = null;
+            List<MemberObject> memberObject = new List<MemberObject>();
             DataTable dataTable = DBContext.GetDataBySQL(sql, new SqlParameter("@City", city));
             foreach (DataRow dr in dataTable.Rows)
             {
-                memberObject = new MemberObject
+                MemberObject member = new MemberObject
                 {
                     MemberId = int.Parse(dr["MemberId"].ToString()),
                     MemberEmail = dr["Email"].ToString(),
@@ -136,17 +135,18 @@ namespace DataAccess.DAO
                     MemberPassword = dr["Password"].ToString(),
                     CompanyName = dr["CompanyName"].ToString()
                 };
+                memberObject.Add(member);
             }
             return memberObject;
         }
-        public MemberObject FilterByCountry(string country)
+        public List<MemberObject> FilterByCountry(string country)
         {
             string sql = "select * from Member where Country = @Country";
-            MemberObject memberObject = null;
+            List<MemberObject> memberObject = new List<MemberObject>();
             DataTable dataTable = DBContext.GetDataBySQL(sql, new SqlParameter("@Country", country));
             foreach (DataRow dr in dataTable.Rows)
             {
-                memberObject = new MemberObject
+                MemberObject member = new MemberObject
                 {
                     MemberId = int.Parse(dr["MemberId"].ToString()),
                     MemberEmail = dr["Email"].ToString(),
@@ -155,17 +155,18 @@ namespace DataAccess.DAO
                     MemberPassword = dr["Password"].ToString(),
                     CompanyName = dr["CompanyName"].ToString()
                 };
-            }
+                memberObject.Add(member);
+            }   
             return memberObject;
         }
-        public MemberObject SearchMemberByName(string name)
+        public List<MemberObject> SearchMemberByName(string name)
         {
             string sql = "select * from Member where Name = @Name";
-            MemberObject memberObject = null;
+            List<MemberObject> memberObjects = new List<MemberObject>();
             DataTable dataTable = DBContext.GetDataBySQL(sql, new SqlParameter("@Name", name));
             foreach (DataRow dr in dataTable.Rows)
             {
-                memberObject = new MemberObject
+                MemberObject memberObject = new MemberObject
                 {
                     MemberId = int.Parse(dr["MemberId"].ToString()),
                     MemberEmail = dr["Email"].ToString(),
@@ -174,8 +175,9 @@ namespace DataAccess.DAO
                     MemberPassword = dr["Password"].ToString(),
                     CompanyName = dr["CompanyName"].ToString()
                 };
+                memberObjects.Add(memberObject);
             }
-            return memberObject;
+            return memberObjects;
         }
     }
 }

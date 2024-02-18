@@ -16,9 +16,9 @@ namespace DataAccess.Repository
         void InsertMember(MemberObject member);
         void UpdateMember(MemberObject member);
         void DeleteMember(int memberId);
-        MemberObject SearchMemberByName(string name);
+        List<MemberObject> SearchMemberByName(string name);
         MemberObject SearchMemberById(int id);
-        MemberObject FilterByCity(string city);
-        MemberObject FilterByCountry(string country);
+        List<MemberObject> FilterByCity(string city);
+        List<MemberObject> FilterByCountry(string country);
     }
 }

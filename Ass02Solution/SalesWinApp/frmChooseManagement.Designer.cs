@@ -72,6 +72,7 @@
             Controls.Add(btOrder);
             Controls.Add(btMember);
             Name = "frmChooseManagement";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "frmChooseManagement";
             ResumeLayout(false);
         }

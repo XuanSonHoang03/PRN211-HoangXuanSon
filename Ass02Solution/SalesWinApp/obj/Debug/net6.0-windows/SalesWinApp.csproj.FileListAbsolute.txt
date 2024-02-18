@@ -59,3 +59,4 @@ D:\Ki5-SP24\PRN211\Github\Ass02Solution\SalesWinApp\obj\Debug\net6.0-windows\ref
 D:\Ki5-SP24\PRN211\Github\Ass02Solution\SalesWinApp\obj\Debug\net6.0-windows\SalesWinApp.pdb
 D:\Ki5-SP24\PRN211\Github\Ass02Solution\SalesWinApp\obj\Debug\net6.0-windows\SalesWinApp.genruntimeconfig.cache
 D:\Ki5-SP24\PRN211\Github\Ass02Solution\SalesWinApp\obj\Debug\net6.0-windows\ref\SalesWinApp.dll
+D:\Ki5-SP24\PRN211\Github\Ass02Solution\SalesWinApp\obj\Debug\net6.0-windows\SalesWinApp.frmProduct.resources

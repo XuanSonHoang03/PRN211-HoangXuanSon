@@ -19,17 +19,26 @@ namespace SalesWinApp
 
         private void btMember_Click(object sender, EventArgs e)
         {
-
+            frmMemberManagement frmMemberManagement = new frmMemberManagement();
+            this.Hide();
+            frmMemberManagement.ShowDialog();
+            this.Show();
         }
 
         private void btOrder_Click(object sender, EventArgs e)
         {
-
+            frmOrderManagement frmOrderManagement = new frmOrderManagement();
+            this.Hide();
+            frmOrderManagement.ShowDialog();
+            this.Show();
         }
 
         private void btProduct_Click(object sender, EventArgs e)
         {
-
+            frmProductManagement frmProductManagement = new frmProductManagement();
+            this.Hide();
+            frmProductManagement.ShowDialog();
+            this.Show();
         }
     }
 }

@@ -15,12 +15,12 @@ namespace DataAccess.Repository
             MemberDAO.Instance.remove(memberId);
         }
 
-        public MemberObject FilterByCity(string city)
+        public List<MemberObject> FilterByCity(string city)
         {
             return MemberDAO.Instance.FilterByCity(city);
         }
 
-        public MemberObject FilterByCountry(string country)
+        public List<MemberObject> FilterByCountry(string country)
         {
             return MemberDAO.Instance.FilterByCountry(country);
         }
@@ -50,7 +50,7 @@ namespace DataAccess.Repository
             return MemberDAO.Instance.getMemberByID(id);
         }
 
-        public MemberObject SearchMemberByName(string name)
+        public List<MemberObject> SearchMemberByName(string name)
         {
             return MemberDAO.Instance.SearchMemberByName(name);
         }

@@ -41,7 +41,7 @@ namespace SalesWinApp
                     MessageBox.Show("Update member successfully");
                     Close();
                 }
-                else if (!InsertOrUpdate)
+                else
                 {
                     MemberObject = new MemberObject()
                     {
@@ -54,7 +54,7 @@ namespace SalesWinApp
                     };
                     memberRepository.InsertMember(MemberObject);
                     MessageBox.Show("Insert member successfully");
-                    Close();
+                    Close(); 
                 }
             }
             catch (Exception ex)
@@ -71,6 +71,7 @@ namespace SalesWinApp
                 {
                     tbPassword.Enabled = false;
                     tbEmail.Enabled = false;
+                    btView.Enabled = false;
                     tbID.Enabled = false;
                 }
                 if (InsertOrUpdate)
