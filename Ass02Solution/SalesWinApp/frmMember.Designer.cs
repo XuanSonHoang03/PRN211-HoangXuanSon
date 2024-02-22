@@ -157,7 +157,7 @@
             btView.Name = "btView";
             btView.Size = new Size(115, 46);
             btView.TabIndex = 14;
-            btView.Text = "View Cart";
+            btView.Text = "View Order";
             btView.UseVisualStyleBackColor = true;
             btView.Click += btView_Click;
             // 

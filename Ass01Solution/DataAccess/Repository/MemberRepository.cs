@@ -11,8 +11,7 @@ namespace DataAccess.Repository
     {
         public List<MemberObject> GetListAllMember(bool descending = false) => MemberDAO.Instance.GetListAllMember(descending);
 
-        public MemberObject GetMemberByID(int id) =>
-            MemberDAO.Instance.GetMemberByID(id);
+        public MemberObject GetMemberByID(int id) =>  MemberDAO.Instance.GetMemberByID(id);
 
         public MemberObject GetMemberByEmailPassword(string email, string password) =>
             MemberDAO.Instance.GetMemberByEmailPassword(email, password);

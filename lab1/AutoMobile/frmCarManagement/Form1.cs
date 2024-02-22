@@ -36,7 +36,7 @@ namespace frmCarManagement
                 LoadCarList();
                 //set focus car updated
                 source.Position = source.Count - 1;
-            }
+            }   
         }
 
         private void LoadCarList()
@@ -139,7 +139,8 @@ namespace frmCarManagement
                 var car = GetCarObject();
                 carRepository.DeleteCar(car.CarID);
                 LoadCarList();
-            } catch (Exception ex)
+            }
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Delete a car");
             }

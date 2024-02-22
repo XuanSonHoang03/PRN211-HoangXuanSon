@@ -599,11 +599,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Ki 5 - SP24\\PRN211\\Github\\Ass01Solution\\DataAccess\\DataAccess.csproj",
+      "projectUniqueName": "D:\\Ki5-SP24\\PRN211\\Github\\Ass01Solution\\DataAccess\\DataAccess.csproj",
       "projectName": "DataAccess",
-      "projectPath": "D:\\Ki 5 - SP24\\PRN211\\Github\\Ass01Solution\\DataAccess\\DataAccess.csproj",
+      "projectPath": "D:\\Ki5-SP24\\PRN211\\Github\\Ass01Solution\\DataAccess\\DataAccess.csproj",
       "packagesPath": "C:\\Users\\ACER\\.nuget\\packages\\",
-      "outputPath": "D:\\Ki 5 - SP24\\PRN211\\Github\\Ass01Solution\\DataAccess\\obj\\",
+      "outputPath": "D:\\Ki5-SP24\\PRN211\\Github\\Ass01Solution\\DataAccess\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ACER\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -620,8 +620,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\Ki 5 - SP24\\PRN211\\Github\\Ass01Solution\\BusinessObject\\BusinessObject.csproj": {
-              "projectPath": "D:\\Ki 5 - SP24\\PRN211\\Github\\Ass01Solution\\BusinessObject\\BusinessObject.csproj"
+            "D:\\Ki5-SP24\\PRN211\\Github\\Ass01Solution\\BusinessObject\\BusinessObject.csproj": {
+              "projectPath": "D:\\Ki5-SP24\\PRN211\\Github\\Ass01Solution\\BusinessObject\\BusinessObject.csproj"
             }
           }
         }

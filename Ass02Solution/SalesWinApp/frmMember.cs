@@ -98,7 +98,10 @@ namespace SalesWinApp
 
         private void btView_Click(object sender, EventArgs e)
         {
-            frmCart frmCart = new frmCart();
+            frmCart frmCart = new frmCart()
+            {
+               memberObject = MemberObject
+            };
             this.Hide();
             frmCart.ShowDialog();
             this.Show();

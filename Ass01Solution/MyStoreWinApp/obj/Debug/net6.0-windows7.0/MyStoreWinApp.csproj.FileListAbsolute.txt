@@ -108,3 +108,40 @@ D:\Ki 5 - SP24\PRN211\Github\Ass01Solution\MyStoreWinApp\obj\Debug\net6.0-window
 D:\Ki 5 - SP24\PRN211\Github\Ass01Solution\MyStoreWinApp\obj\Debug\net6.0-windows7.0\MyStoreWinApp.pdb
 D:\Ki 5 - SP24\PRN211\Github\Ass01Solution\MyStoreWinApp\obj\Debug\net6.0-windows7.0\MyStoreWinApp.genruntimeconfig.cache
 D:\Ki 5 - SP24\PRN211\Github\Ass01Solution\MyStoreWinApp\obj\Debug\net6.0-windows7.0\ref\MyStoreWinApp.dll
+D:\Ki5-SP24\PRN211\Github\Ass01Solution\MyStoreWinApp\bin\Debug\net6.0-windows7.0\MyStoreWinApp.exe
+D:\Ki5-SP24\PRN211\Github\Ass01Solution\MyStoreWinApp\bin\Debug\net6.0-windows7.0\appsettings.json
+D:\Ki5-SP24\PRN211\Github\Ass01Solution\MyStoreWinApp\bin\Debug\net6.0-windows7.0\MyStoreWinApp.deps.json
+D:\Ki5-SP24\PRN211\Github\Ass01Solution\MyStoreWinApp\bin\Debug\net6.0-windows7.0\MyStoreWinApp.runtimeconfig.json
+D:\Ki5-SP24\PRN211\Github\Ass01Solution\MyStoreWinApp\bin\Debug\net6.0-windows7.0\MyStoreWinApp.dll
+D:\Ki5-SP24\PRN211\Github\Ass01Solution\MyStoreWinApp\bin\Debug\net6.0-windows7.0\MyStoreWinApp.pdb
+D:\Ki5-SP24\PRN211\Github\Ass01Solution\MyStoreWinApp\bin\Debug\net6.0-windows7.0\Microsoft.Extensions.Configuration.dll
+D:\Ki5-SP24\PRN211\Github\Ass01Solution\MyStoreWinApp\bin\Debug\net6.0-windows7.0\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\Ki5-SP24\PRN211\Github\Ass01Solution\MyStoreWinApp\bin\Debug\net6.0-windows7.0\Microsoft.Extensions.Configuration.FileExtensions.dll
+D:\Ki5-SP24\PRN211\Github\Ass01Solution\MyStoreWinApp\bin\Debug\net6.0-windows7.0\Microsoft.Extensions.Configuration.Json.dll
+D:\Ki5-SP24\PRN211\Github\Ass01Solution\MyStoreWinApp\bin\Debug\net6.0-windows7.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+D:\Ki5-SP24\PRN211\Github\Ass01Solution\MyStoreWinApp\bin\Debug\net6.0-windows7.0\Microsoft.Extensions.FileProviders.Physical.dll
+D:\Ki5-SP24\PRN211\Github\Ass01Solution\MyStoreWinApp\bin\Debug\net6.0-windows7.0\Microsoft.Extensions.FileSystemGlobbing.dll
+D:\Ki5-SP24\PRN211\Github\Ass01Solution\MyStoreWinApp\bin\Debug\net6.0-windows7.0\Microsoft.Extensions.Primitives.dll
+D:\Ki5-SP24\PRN211\Github\Ass01Solution\MyStoreWinApp\bin\Debug\net6.0-windows7.0\System.Text.Encodings.Web.dll
+D:\Ki5-SP24\PRN211\Github\Ass01Solution\MyStoreWinApp\bin\Debug\net6.0-windows7.0\System.Text.Json.dll
+D:\Ki5-SP24\PRN211\Github\Ass01Solution\MyStoreWinApp\bin\Debug\net6.0-windows7.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+D:\Ki5-SP24\PRN211\Github\Ass01Solution\MyStoreWinApp\bin\Debug\net6.0-windows7.0\BusinessObject.dll
+D:\Ki5-SP24\PRN211\Github\Ass01Solution\MyStoreWinApp\bin\Debug\net6.0-windows7.0\DataAccess.dll
+D:\Ki5-SP24\PRN211\Github\Ass01Solution\MyStoreWinApp\bin\Debug\net6.0-windows7.0\DataAccess.pdb
+D:\Ki5-SP24\PRN211\Github\Ass01Solution\MyStoreWinApp\bin\Debug\net6.0-windows7.0\BusinessObject.pdb
+D:\Ki5-SP24\PRN211\Github\Ass01Solution\MyStoreWinApp\obj\Debug\net6.0-windows7.0\MyStoreWinApp.csproj.AssemblyReference.cache
+D:\Ki5-SP24\PRN211\Github\Ass01Solution\MyStoreWinApp\obj\Debug\net6.0-windows7.0\MyStoreWinApp.frmLogin.resources
+D:\Ki5-SP24\PRN211\Github\Ass01Solution\MyStoreWinApp\obj\Debug\net6.0-windows7.0\MyStoreWinApp.frmMember.resources
+D:\Ki5-SP24\PRN211\Github\Ass01Solution\MyStoreWinApp\obj\Debug\net6.0-windows7.0\MyStoreWinApp.frmMemberManagerment.resources
+D:\Ki5-SP24\PRN211\Github\Ass01Solution\MyStoreWinApp\obj\Debug\net6.0-windows7.0\MyStoreWinApp.csproj.GenerateResource.cache
+D:\Ki5-SP24\PRN211\Github\Ass01Solution\MyStoreWinApp\obj\Debug\net6.0-windows7.0\MyStoreWinApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\Ki5-SP24\PRN211\Github\Ass01Solution\MyStoreWinApp\obj\Debug\net6.0-windows7.0\MyStoreWinApp.AssemblyInfoInputs.cache
+D:\Ki5-SP24\PRN211\Github\Ass01Solution\MyStoreWinApp\obj\Debug\net6.0-windows7.0\MyStoreWinApp.AssemblyInfo.cs
+D:\Ki5-SP24\PRN211\Github\Ass01Solution\MyStoreWinApp\obj\Debug\net6.0-windows7.0\MyStoreWinApp.csproj.CoreCompileInputs.cache
+D:\Ki5-SP24\PRN211\Github\Ass01Solution\MyStoreWinApp\obj\Debug\net6.0-windows7.0\MyStoreWinApp.sourcelink.json
+D:\Ki5-SP24\PRN211\Github\Ass01Solution\MyStoreWinApp\obj\Debug\net6.0-windows7.0\MyStoreWinApp.csproj.CopyComplete
+D:\Ki5-SP24\PRN211\Github\Ass01Solution\MyStoreWinApp\obj\Debug\net6.0-windows7.0\MyStoreWinApp.dll
+D:\Ki5-SP24\PRN211\Github\Ass01Solution\MyStoreWinApp\obj\Debug\net6.0-windows7.0\refint\MyStoreWinApp.dll
+D:\Ki5-SP24\PRN211\Github\Ass01Solution\MyStoreWinApp\obj\Debug\net6.0-windows7.0\MyStoreWinApp.pdb
+D:\Ki5-SP24\PRN211\Github\Ass01Solution\MyStoreWinApp\obj\Debug\net6.0-windows7.0\MyStoreWinApp.genruntimeconfig.cache
+D:\Ki5-SP24\PRN211\Github\Ass01Solution\MyStoreWinApp\obj\Debug\net6.0-windows7.0\ref\MyStoreWinApp.dll

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xssZKN0P/cqWDQwiDJSRgnK9odhSQxuQ8D4SQTqGh0fI4twDWZZ4H8hFYfqCkwoN7ikAWSxmYtLUP6vT1XLaWA==",
+  "dgSpecHash": "4wi7ov8zGO99vJG+rKRTzbJwBwBPAM1Ta2wzprQPcN8+N1T4aEA1fgRWUfDHHlXb8oIDcofRmMHCIjsFED1Yww==",
   "success": true,
-  "projectFilePath": "D:\\Ki 5 - SP24\\PRN211\\Github\\Ass01Solution\\MyStoreWinApp\\MyStoreWinApp.csproj",
+  "projectFilePath": "D:\\Ki5-SP24\\PRN211\\Github\\Ass01Solution\\MyStoreWinApp\\MyStoreWinApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ACER\\.nuget\\packages\\microsoft.extensions.configuration\\7.0.0\\microsoft.extensions.configuration.7.0.0.nupkg.sha512",
     "C:\\Users\\ACER\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0\\microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",

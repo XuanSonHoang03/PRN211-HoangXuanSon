@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Kì 5 - SP24\\PRN211\\Github\\lab1\\AutoMobile\\AutomobileWinApp\\AutomobileWinApp.csproj": {}
+    "D:\\Ki5-SP24\\PRN211\\Github\\lab1\\AutoMobile\\AutomobileWinApp\\AutomobileWinApp.csproj": {}
   },
   "projects": {
-    "D:\\Kì 5 - SP24\\PRN211\\Github\\lab1\\AutoMobile\\AutomobileWinApp\\AutomobileWinApp.csproj": {
+    "D:\\Ki5-SP24\\PRN211\\Github\\lab1\\AutoMobile\\AutomobileWinApp\\AutomobileWinApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Kì 5 - SP24\\PRN211\\Github\\lab1\\AutoMobile\\AutomobileWinApp\\AutomobileWinApp.csproj",
+        "projectUniqueName": "D:\\Ki5-SP24\\PRN211\\Github\\lab1\\AutoMobile\\AutomobileWinApp\\AutomobileWinApp.csproj",
         "projectName": "AutomobileWinApp",
-        "projectPath": "D:\\Kì 5 - SP24\\PRN211\\Github\\lab1\\AutoMobile\\AutomobileWinApp\\AutomobileWinApp.csproj",
+        "projectPath": "D:\\Ki5-SP24\\PRN211\\Github\\lab1\\AutoMobile\\AutomobileWinApp\\AutomobileWinApp.csproj",
         "packagesPath": "C:\\Users\\ACER\\.nuget\\packages\\",
-        "outputPath": "D:\\Kì 5 - SP24\\PRN211\\Github\\lab1\\AutoMobile\\AutomobileWinApp\\obj\\",
+        "outputPath": "D:\\Ki5-SP24\\PRN211\\Github\\lab1\\AutoMobile\\AutomobileWinApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ACER\\AppData\\Roaming\\NuGet\\NuGet.Config",

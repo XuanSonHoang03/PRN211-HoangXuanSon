@@ -51,6 +51,8 @@ namespace MyStoreWinApp
                         Password = tbPassword.Text,
                         City = tbCity.Text,
                         Country = tbCountry.Text
+
+
                     };
 
                     MemberRepository.InsertMember(memNew);
@@ -60,7 +62,6 @@ namespace MyStoreWinApp
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.ToString());
                 MessageBox.Show(ex.Message, "Invalid");
             }
         }

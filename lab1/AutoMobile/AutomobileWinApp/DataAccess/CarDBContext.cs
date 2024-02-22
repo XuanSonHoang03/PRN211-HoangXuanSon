@@ -18,6 +18,7 @@ namespace DataAccess
         private static CarDBContext instance = null;
         private static readonly object instanceLock = new object();
         private CarDBContext() { }
+        //single pattern
         public static CarDBContext Instance
         {
             get

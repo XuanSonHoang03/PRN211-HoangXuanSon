@@ -35,11 +35,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Kì 5 - SP24\\PRN211\\Github\\lab1\\AutoMobile\\frmCarManagement\\frmCarManagement.csproj",
+      "projectUniqueName": "D:\\Ki5-SP24\\PRN211\\Github\\lab1\\AutoMobile\\frmCarManagement\\frmCarManagement.csproj",
       "projectName": "frmCarManagement",
-      "projectPath": "D:\\Kì 5 - SP24\\PRN211\\Github\\lab1\\AutoMobile\\frmCarManagement\\frmCarManagement.csproj",
+      "projectPath": "D:\\Ki5-SP24\\PRN211\\Github\\lab1\\AutoMobile\\frmCarManagement\\frmCarManagement.csproj",
       "packagesPath": "C:\\Users\\ACER\\.nuget\\packages\\",
-      "outputPath": "D:\\Kì 5 - SP24\\PRN211\\Github\\lab1\\AutoMobile\\frmCarManagement\\obj\\",
+      "outputPath": "D:\\Ki5-SP24\\PRN211\\Github\\lab1\\AutoMobile\\frmCarManagement\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ACER\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -56,8 +56,8 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "projectReferences": {
-            "D:\\Kì 5 - SP24\\PRN211\\Github\\lab1\\AutoMobile\\AutomobileWinApp\\AutomobileWinApp.csproj": {
-              "projectPath": "D:\\Kì 5 - SP24\\PRN211\\Github\\lab1\\AutoMobile\\AutomobileWinApp\\AutomobileWinApp.csproj"
+            "D:\\Ki5-SP24\\PRN211\\Github\\lab1\\AutoMobile\\AutomobileWinApp\\AutomobileWinApp.csproj": {
+              "projectPath": "D:\\Ki5-SP24\\PRN211\\Github\\lab1\\AutoMobile\\AutomobileWinApp\\AutomobileWinApp.csproj"
             }
           }
         }
