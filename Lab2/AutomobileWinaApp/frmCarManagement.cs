@@ -49,6 +49,7 @@ namespace AutomobileWinaApp
             try
             {
                 source = new BindingSource();
+
                 source.DataSource = car;
 
                 tbID.DataBindings.Clear();
