@@ -15,6 +15,7 @@ namespace SalesWinApp
     public partial class frmProductOrder : Form
     {
         public IOrderDetailRepository OrderDetailRepository  = new OrderDetailRepository();
+        public IProductRepository productRepository = new ProductRepository();
         public IOrderRepository OrderRepository = new OrderRepository();
         public ProductObject ProductObject { get; set; }
         public MemberObject memberObject { get; set; }
@@ -31,6 +32,11 @@ namespace SalesWinApp
             tbWeight.Enabled = false;
             tbName.Enabled = false;
 
+           LoadProduct();
+        }
+
+        private void LoadProduct()
+        {
             tbID.Text = ProductObject.ProductId.ToString();
             tbName.Text = ProductObject.ProductName;
             tbCategory.Text = ProductObject.CategoryId.ToString();
@@ -74,7 +80,6 @@ namespace SalesWinApp
                 MessageBox.Show("Failed to add order");
                 return;
             }
-
             OrderDetailObject orderDetailObject = new OrderDetailObject
             {
                 OrderId = orderId, // Use the retrieved OrderId here
@@ -85,7 +90,16 @@ namespace SalesWinApp
             };
 
             OrderDetailRepository.insert(orderDetailObject);
+            //change quantity of product in stock
+            ProductObject.QuantityPerUnit = ProductObject.QuantityPerUnit - int.Parse(tbQuantity.Text);
+            if (ProductObject.QuantityPerUnit < int.Parse(tbQuantity.Text))
+            {
+                MessageBox.Show("Quantity of product in stock is not enough");
+                return;
+            }
+            productRepository.UpdateProduct(ProductObject);
             MessageBox.Show("Add product to order successfully");
+            LoadProduct();
 
             this.Close();
         }

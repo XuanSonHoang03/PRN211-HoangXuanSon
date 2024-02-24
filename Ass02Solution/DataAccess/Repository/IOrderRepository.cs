@@ -14,5 +14,7 @@ namespace DataAccess.Repository
         void insert(OrderObject orderObject);
         void delete(int orderId);
         int InsertAndGetOrderId(OrderObject orderObject);
+        string GetTotalOrderByID(string v);
+        List<OrderObject> SearchByOrderDate(DateTime date1, DateTime date2);
     }
 }

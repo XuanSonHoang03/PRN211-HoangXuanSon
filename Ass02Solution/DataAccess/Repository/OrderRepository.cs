@@ -25,6 +25,11 @@ namespace DataAccess.Repository
             return OrderDAO.Instance.GetAllOrder();
         }
 
+        public string GetTotalOrderByID(string v)
+        {
+            return OrderDAO.Instance.GetTotalOrderByID(v);
+        }
+
         public void insert(OrderObject orderObject)
         {
             OrderDAO.Instance.InsertOrder(orderObject);
@@ -33,6 +38,11 @@ namespace DataAccess.Repository
         public int InsertAndGetOrderId(OrderObject orderObject)
         {
             return OrderDAO.Instance.InsertAndGetOrderId(orderObject);
+        }
+
+        public List<OrderObject> SearchByOrderDate(DateTime date1, DateTime date2)
+        {
+            return OrderDAO.Instance.SearchByOrderDate(date1, date2);
         }
     }
 }

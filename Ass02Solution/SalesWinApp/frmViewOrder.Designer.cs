@@ -66,6 +66,7 @@
             btSort.TabIndex = 41;
             btSort.Text = "DESC";
             btSort.UseVisualStyleBackColor = true;
+            btSort.Click += btSort_Click;
             // 
             // gbFilter
             // 
@@ -91,6 +92,7 @@
             btFilter.TabIndex = 40;
             btFilter.Text = "Filter";
             btFilter.UseVisualStyleBackColor = true;
+            btFilter.Click += btFilter_Click;
             // 
             // rbUnitsInStock
             // 
@@ -163,6 +165,7 @@
             tbSearch.Name = "tbSearch";
             tbSearch.Size = new Size(154, 27);
             tbSearch.TabIndex = 1;
+            tbSearch.TextChanged += tbSearch_TextChanged;
             // 
             // cbSearch
             // 

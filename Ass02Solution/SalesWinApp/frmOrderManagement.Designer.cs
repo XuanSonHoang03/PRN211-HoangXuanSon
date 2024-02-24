@@ -32,19 +32,22 @@
             label2 = new Label();
             label3 = new Label();
             label4 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
-            textBox4 = new TextBox();
+            tbID = new TextBox();
+            tbMember = new TextBox();
+            tbOrderTotal = new TextBox();
+            tbOrderDate = new TextBox();
             groupBox1 = new GroupBox();
-            dataGridView1 = new DataGridView();
-            button1 = new Button();
-            label5 = new Label();
+            dtEnd = new DateTimePicker();
+            dtStart = new DateTimePicker();
+            btSearch = new Button();
             label6 = new Label();
             label7 = new Label();
-            button2 = new Button();
+            dgvOrder = new DataGridView();
+            btExportData = new Button();
+            label5 = new Label();
+            btLoad = new Button();
             groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgvOrder).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -83,74 +86,71 @@
             label4.TabIndex = 3;
             label4.Text = "Member";
             // 
-            // textBox1
+            // tbID
             // 
-            textBox1.Location = new Point(135, 81);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(184, 27);
-            textBox1.TabIndex = 4;
+            tbID.Location = new Point(135, 81);
+            tbID.Name = "tbID";
+            tbID.Size = new Size(184, 27);
+            tbID.TabIndex = 4;
             // 
-            // textBox2
+            // tbMember
             // 
-            textBox2.Location = new Point(135, 197);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(184, 27);
-            textBox2.TabIndex = 5;
+            tbMember.Location = new Point(135, 197);
+            tbMember.Name = "tbMember";
+            tbMember.Size = new Size(184, 27);
+            tbMember.TabIndex = 5;
             // 
-            // textBox3
+            // tbOrderTotal
             // 
-            textBox3.Location = new Point(135, 157);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(184, 27);
-            textBox3.TabIndex = 6;
+            tbOrderTotal.Location = new Point(135, 157);
+            tbOrderTotal.Name = "tbOrderTotal";
+            tbOrderTotal.Size = new Size(184, 27);
+            tbOrderTotal.TabIndex = 6;
             // 
-            // textBox4
+            // tbOrderDate
             // 
-            textBox4.Location = new Point(135, 119);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(184, 27);
-            textBox4.TabIndex = 7;
+            tbOrderDate.Location = new Point(135, 119);
+            tbOrderDate.Name = "tbOrderDate";
+            tbOrderDate.Size = new Size(184, 27);
+            tbOrderDate.TabIndex = 7;
             // 
             // groupBox1
             // 
-            groupBox1.Controls.Add(button2);
+            groupBox1.Controls.Add(dtEnd);
+            groupBox1.Controls.Add(dtStart);
+            groupBox1.Controls.Add(btSearch);
             groupBox1.Controls.Add(label6);
             groupBox1.Controls.Add(label7);
             groupBox1.Location = new Point(362, 81);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(308, 162);
+            groupBox1.Size = new Size(382, 162);
             groupBox1.TabIndex = 8;
             groupBox1.TabStop = false;
             groupBox1.Text = "Search";
             // 
-            // dataGridView1
+            // dtEnd
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(106, 269);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.RowTemplate.Height = 29;
-            dataGridView1.Size = new Size(504, 193);
-            dataGridView1.TabIndex = 9;
+            dtEnd.Location = new Point(113, 69);
+            dtEnd.Name = "dtEnd";
+            dtEnd.Size = new Size(250, 27);
+            dtEnd.TabIndex = 15;
             // 
-            // button1
+            // dtStart
             // 
-            button1.Location = new Point(294, 479);
-            button1.Name = "button1";
-            button1.Size = new Size(146, 41);
-            button1.TabIndex = 10;
-            button1.Text = "Export Data";
-            button1.UseVisualStyleBackColor = true;
+            dtStart.Location = new Point(113, 35);
+            dtStart.Name = "dtStart";
+            dtStart.Size = new Size(250, 27);
+            dtStart.TabIndex = 14;
             // 
-            // label5
+            // btSearch
             // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Segoe UI", 13.8F, FontStyle.Italic, GraphicsUnit.Point);
-            label5.Location = new Point(268, 21);
-            label5.Name = "label5";
-            label5.Size = new Size(206, 31);
-            label5.TabIndex = 11;
-            label5.Text = "Order Management";
+            btSearch.Location = new Point(104, 116);
+            btSearch.Name = "btSearch";
+            btSearch.Size = new Size(94, 29);
+            btSearch.TabIndex = 12;
+            btSearch.Text = "Search";
+            btSearch.UseVisualStyleBackColor = true;
+            btSearch.Click += btSearch_Click;
             // 
             // label6
             // 
@@ -170,37 +170,70 @@
             label7.TabIndex = 13;
             label7.Text = "End Date";
             // 
-            // button2
+            // dgvOrder
             // 
-            button2.Location = new Point(104, 116);
-            button2.Name = "button2";
-            button2.Size = new Size(94, 29);
-            button2.TabIndex = 12;
-            button2.Text = "Search";
-            button2.UseVisualStyleBackColor = true;
+            dgvOrder.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvOrder.Location = new Point(106, 269);
+            dgvOrder.Name = "dgvOrder";
+            dgvOrder.RowHeadersWidth = 51;
+            dgvOrder.RowTemplate.Height = 29;
+            dgvOrder.Size = new Size(567, 193);
+            dgvOrder.TabIndex = 9;
+            // 
+            // btExportData
+            // 
+            btExportData.Location = new Point(313, 479);
+            btExportData.Name = "btExportData";
+            btExportData.Size = new Size(146, 41);
+            btExportData.TabIndex = 10;
+            btExportData.Text = "Export Data";
+            btExportData.UseVisualStyleBackColor = true;
+            btExportData.Click += btExportData_Click;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Segoe UI", 13.8F, FontStyle.Italic, GraphicsUnit.Point);
+            label5.Location = new Point(268, 21);
+            label5.Name = "label5";
+            label5.Size = new Size(206, 31);
+            label5.TabIndex = 11;
+            label5.Text = "Order Management";
+            // 
+            // btLoad
+            // 
+            btLoad.Location = new Point(679, 269);
+            btLoad.Name = "btLoad";
+            btLoad.Size = new Size(94, 29);
+            btLoad.TabIndex = 16;
+            btLoad.Text = "Load";
+            btLoad.UseVisualStyleBackColor = true;
+            btLoad.Click += btLoad_Click;
             // 
             // frmOrderManagement
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(712, 532);
+            ClientSize = new Size(790, 532);
+            Controls.Add(btLoad);
             Controls.Add(label5);
-            Controls.Add(button1);
-            Controls.Add(dataGridView1);
+            Controls.Add(btExportData);
+            Controls.Add(dgvOrder);
             Controls.Add(groupBox1);
-            Controls.Add(textBox4);
-            Controls.Add(textBox3);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(tbOrderDate);
+            Controls.Add(tbOrderTotal);
+            Controls.Add(tbMember);
+            Controls.Add(tbID);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
             Name = "frmOrderManagement";
             Text = "frmOrder";
+            Load += frmOrderManagement_Load;
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgvOrder).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -211,16 +244,19 @@
         private Label label2;
         private Label label3;
         private Label label4;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private TextBox textBox3;
-        private TextBox textBox4;
+        private TextBox tbID;
+        private TextBox tbMember;
+        private TextBox tbOrderTotal;
+        private TextBox tbOrderDate;
         private GroupBox groupBox1;
         private Label label6;
         private Label label7;
-        private DataGridView dataGridView1;
-        private Button button1;
+        private DataGridView dgvOrder;
+        private Button btExportData;
         private Label label5;
-        private Button button2;
+        private Button btSearch;
+        private DateTimePicker dtEnd;
+        private DateTimePicker dtStart;
+        private Button btLoad;
     }
 }

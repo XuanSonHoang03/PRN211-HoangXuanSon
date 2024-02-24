@@ -84,5 +84,24 @@ namespace DataAccess.DAO
             };
             return DBContext.ExcuteSql(sql, parameters);
         }
+
+        public List<OrderDetailObject> GetOrderDetailByMemberId(int memberId)
+        {
+           string sql = "select * from OrderDetails where OrderId in (select OrderId from [Order] where MemberId = @MemberId)";
+            var orderDetailList = new List<OrderDetailObject>();
+            foreach (DataRow dr in DBContext.GetDataBySQL(sql, new SqlParameter("@MemberId", memberId)).Rows)
+            {
+                OrderDetailObject orderDetail = new OrderDetailObject
+                {
+                    OrderId = int.Parse(dr["OrderId"].ToString()),
+                    ProductId = int.Parse(dr["ProductId"].ToString()),
+                    UnitPrice = decimal.Parse(dr["UnitPrice"].ToString()),
+                    Quantity = int.Parse(dr["Quantity"].ToString()),
+                    Discount = decimal.Parse(dr["Discount"].ToString())
+                };
+                orderDetailList.Add(orderDetail);
+            }
+            return orderDetailList;
+        }
     }
 }

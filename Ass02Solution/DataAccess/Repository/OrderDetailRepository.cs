@@ -29,5 +29,9 @@ namespace DataAccess.Repository
         {
             OrderDetailDAO.Instance.insert(orderDetailObject);
         }
+        public List<OrderDetailObject> GetOrderDetailByMemberId(int memberId)
+        {
+            return OrderDetailDAO.Instance.GetOrderDetailByMemberId(memberId);
+        }
     }
 }

@@ -104,5 +104,50 @@ namespace DataAccess.DAO
             };
             return int.Parse(DBContext.ExcuteSql(sql, parameters).ToString());
         }
+
+        internal string GetTotalOrderByID(string v)
+        {
+            string sql = "SELECT SUM(Quantity * UnitPrice) FROM OrderDetails WHERE OrderId = @OrderId";
+            SqlParameter[] parameters = new SqlParameter[]
+            {
+                new SqlParameter("@OrderId", v),
+            };
+
+            object result = DBContext.ExcuteSql(sql, parameters);
+
+            if (result != DBNull.Value)
+            {
+                return result.ToString();
+            }
+            else
+            {
+                return "0";
+            }
+        }
+
+        internal List<OrderObject> SearchByOrderDate(DateTime date1, DateTime date2)
+        {
+            string sql = "select * from [Order] where OrderDate between @date1 and @date2";
+            SqlParameter[] parameters = new SqlParameter[]
+            {
+                new SqlParameter("@date1", date1),
+                new SqlParameter("@date2", date2),
+            };
+            var orderList = new List<OrderObject>();
+            foreach (DataRow dr in DBContext.GetDataBySQL(sql, parameters).Rows)
+            {
+                OrderObject order = new OrderObject
+                {
+                    OrderId = int.Parse(dr["OrderId"].ToString()),
+                    MemberId = int.Parse(dr["MemberId"].ToString()),
+                    OrderDate = DateTime.Parse(dr["OrderDate"].ToString()),
+                    RequiredDate = DateTime.Parse(dr["RequiredDate"].ToString()),
+                    ShippedDate = DateTime.Parse(dr["ShippedDate"].ToString()),
+                    Freight = double.Parse(dr["Freight"].ToString()),
+                };
+                orderList.Add(order);
+            }
+            return orderList;
+        }
     }
 }
